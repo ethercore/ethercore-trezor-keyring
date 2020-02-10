@@ -3,14 +3,14 @@ const ethUtil = require('ethereumjs-util')
 const Transaction = require('ethereumjs-tx')
 const HDKey = require('hdkey')
 const TrezorConnect = require('trezor-connect').default
-const hdPathString = `m/44'/60'/0'/0`
+const hdPathString = `m/44'/466'/0'/0`
 const keyringType = 'Trezor Hardware'
 const pathBase = 'm'
 const MAX_INDEX = 1000
 const DELAY_BETWEEN_POPUPS = 1000
 const TREZOR_CONNECT_MANIFEST = {
-  email: 'support@metamask.io',
-  appUrl: 'https://metamask.io',
+  email: 'info@ethercore.org',
+  appUrl: 'https://ethercore.org',
 }
 
 class TrezorKeyring extends EventEmitter {

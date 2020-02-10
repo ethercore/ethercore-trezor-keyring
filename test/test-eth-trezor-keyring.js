@@ -69,7 +69,7 @@ describe('TrezorKeyring', function () {
 
     describe('constructor', function () {
         it('constructs', function (done) {
-            const t = new TrezorKeyring({hdPath: `m/44'/60'/0'/0`})
+            const t = new TrezorKeyring({hdPath: `m/44'/466'/0'/0`})
             assert.equal(typeof t, 'object')
             t.getAccounts()
             .then(accounts => {
@@ -84,7 +84,7 @@ describe('TrezorKeyring', function () {
             keyring.serialize()
             .then((output) => {
               assert.equal(output.page, 0)
-              assert.equal(output.hdPath, `m/44'/60'/0'/0`)
+              assert.equal(output.hdPath, `m/44'/466'/0'/0`)
               assert.equal(Array.isArray(output.accounts), true)
               assert.equal(output.accounts.length, 0)
               done()
